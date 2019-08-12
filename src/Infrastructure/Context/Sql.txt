@@ -1,0 +1,25 @@
+﻿Go
+Create Database APITest
+Go
+Drop Table Phones;
+Go
+Drop Table Users;
+Go
+Create Table Users
+(
+  id int primary key identity(1,1),
+  firstName varchar(200), 
+  lastName varchar(200), 
+  email varchar(200), 
+  created_at datetime,
+  last_login datetime
+)
+Go
+Create Table Phones
+(
+  id int primary key identity(1,1),
+  idUser int references Users(id),
+  number varchar(20), 
+  area_code varchar(5), 
+  country_code varchar(10)
+)
