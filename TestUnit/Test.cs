@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Net;
 using System.Net.Http;
-using Api.Test.Controllers;
 using API.User.Util;
 using Entity;
 using Entity.Entities;
